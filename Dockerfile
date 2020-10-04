@@ -1,15 +1,15 @@
-FROM alpine:3.7
+FROM ubuntu:18.04
 
-RUN apt update && apt install -y python3 python3-pip sudo
+RUN apt-get update && apt-get install -y python3 python3-pip sudo
 RUN useradd -m omkar
 RUN chown -R omkar:omkar /home/omkar/
-COPY --chown=omkar . /home/omkar/
+COPY --chown=omkar . /home/omkar/app/
 
 USER omkar
 
 RUN pip3 install --upgrade pip
 
-RUN cd /home/omkar/app/ && pip3 install pip3 install -r requirements.txt
+RUN cd /home/omkar/app/ && python3 -m pip install -r requirements.txt
 
 WORKDIR /home/omkar/app
 
