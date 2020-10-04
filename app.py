@@ -4,7 +4,7 @@ import joblib
 from numpy import array
 
 app = Flask(__name__)
-model = joblib.load('models/linear_svm.joblib.joblib')
+model = joblib.load('models/linear_svm.joblib')
 vectorizer = joblib.load('models/tfidf_vectorizer.joblib')
 
 
@@ -24,7 +24,8 @@ def main():
         print(f'Prediction: {prediction}')
         prediction = 'Positive' if prediction == 1 else 'Negative'
 
-        return flask.render_template('index.html', inp_text=input_text,
+        return flask.render_template('prediction_result.html',
+                                     inp_text=input_text,
                                      result=prediction)
 
 

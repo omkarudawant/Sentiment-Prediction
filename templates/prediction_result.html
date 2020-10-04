@@ -10,18 +10,14 @@
 <body>
 <center>
     <h1>Sentiment Classification</h1><br><br>
-
     <br><br>
-
-    <div class="prediction">
-        <form action="{{url_for('main')}}" method="POST">
-            <strong>Your review:</strong> <input placeholder="Min 100 charecters" name="input_for_model" size="60"
-                                                 type="text" required><br><br>
-            <input id="submit-btn" class="submit" value="Predict" type="submit">
-        </form>
+    <div class="predicted_sentiment">
+        <p>
+            <strong>Your input:</strong> {{inp_text}}
+            <br><br>
+            <strong>Sentiment:</strong> {{result}}
+        </p>
     </div>
-    <br><br>
-    <button value="Refresh Page" onClick="window.location.href=window.location.href">Refresh Page</button>
 </center>
 
 </body>
