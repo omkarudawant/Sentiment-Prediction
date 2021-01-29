@@ -11,21 +11,20 @@ To start the app, head over to **app/** directory which contains the **models/**
 
 Start the app by using the command, ```python app.py```, if all the dependencies are installed properly you can see the app running at ```127.0.0.0/5000``` or ```localhost/5000``` in your browser as follows.
 
-**CMD** <br>
-<img src="./images/cmd.png" height="100" width="400">
+
+APP home
+----
+<img src="./images/app_home.png" height="350" width="650">
 
 
+Positive Prediction
+---- 
 
-**APP home** <br>
-<img src="./images/app_home.png" height="350" width="520">
-
-
-
-**Positive Prediction** <br>
-<img src="./images/app_pred_positive.png" height="350" width="520">
+<img src="./images/app_pred_positive.png" height="350" width="650">
 
 
+Negative Prediction
+----
 
-**Negative Prediction** <br>
-<img src="./images/app_pred_negative.png" height="350" width="520">
+<img src="./images/app_pred_negative.png" height="350" width="650">
 
